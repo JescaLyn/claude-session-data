@@ -34,5 +34,5 @@ Leaf dependency with no upstream dependencies. Both `@claude-monitor/core` and `
 ## Constraints
 
 - **macOS paths.** Searches `~/.claude/projects/` and `~/.config/claude/projects/`. Linux/Windows deferred.
-- **Not published to npm.** Consumed via `file:` references only.
+- **npm-publishable.** Currently consumed via `file:` references. Ships as TypeScript source with no build step.
 - **Neutral naming in code and published files.** Package name and source must not reference internal project names so claude-monitor can push to GitHub independently.

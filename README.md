@@ -6,9 +6,13 @@ claude-monitor uses it for JSONL ingestion, but it is usable on its own.
 
 ## Install
 
-Not published to npm. Ships as TypeScript source (`"main": "src/index.ts"`), so consuming projects need a TypeScript-aware runtime or bundler such as [tsx](https://github.com/privatenumber/tsx), Vite, or esbuild.
+Ships as TypeScript source (`"main": "src/index.ts"`), so consuming projects need a TypeScript-aware runtime or bundler such as [tsx](https://github.com/privatenumber/tsx), Vite, or esbuild.
 
-Add it as a `file:` dependency:
+```bash
+npm install claude-session-data
+```
+
+Or as a local `file:` dependency:
 
 ```json
 "claude-session-data": "file:../claude-session-data"

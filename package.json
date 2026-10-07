@@ -1,9 +1,32 @@
 {
   "name": "claude-session-data",
   "version": "0.1.0",
+  "description": "Read and parse Claude Code session transcripts from the local filesystem",
   "type": "module",
   "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JescaLyn/claude-session-data.git"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "session",
+    "jsonl",
+    "parser"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "typescript": "^5.7.0"

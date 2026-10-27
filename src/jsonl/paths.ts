@@ -7,15 +7,20 @@ export const PROJECT_DIRS = [
   resolve(homedir(), '.claude/projects'),
 ];
 
-export function findJsonlFiles(): string[] {
+export interface FindJsonlOptions {
+  includeSubagents?: boolean;
+}
+
+export function findJsonlFiles(options?: FindJsonlOptions): string[] {
+  const includeSubagents = options?.includeSubagents ?? true;
   const files = new Set<string>();
 
   for (const projectDir of PROJECT_DIRS) {
     if (!existsSync(projectDir)) continue;
     walkDir(projectDir, (filePath) => {
-      if (filePath.endsWith('.jsonl')) {
-        files.add(filePath);
-      }
+      if (!filePath.endsWith('.jsonl')) return;
+      if (!includeSubagents && filePath.includes('/subagents/')) return;
+      files.add(filePath);
     });
   }
 

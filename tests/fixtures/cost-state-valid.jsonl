@@ -1,0 +1,3 @@
+{"type":"assistant","sessionId":"sess-abc","timestamp":"2026-10-01T10:00:00Z","message":{"id":"msg_01","model":"claude-opus-5-5","usage":{"input_tokens":100,"output_tokens":50}}}
+{"type":"assistant","sessionId":"sess-abc","timestamp":"2026-10-01T10:01:00Z","message":{"id":"msg_02","model":"claude-opus-5-5","usage":{"input_tokens":200,"output_tokens":100}}}
+{"type":"cost-state","sessionId":"sess-abc","totalCostUSD":0.0245,"totalDuration":3600,"totalLinesAdded":42,"totalLinesRemoved":10,"modelUsage":{"claude-opus-5-5":{"inputTokens":300,"outputTokens":150,"thinkingTokens":0,"cacheReadInputTokens":0,"cacheCreationInputTokens":0,"webSearchRequests":0,"costUSD":0.0245}}}
